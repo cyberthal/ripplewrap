@@ -4,4 +4,6 @@
 # The sed ignores Emacs autosave versions of .md files.
 # Script assumes ripplebuild.sh is in path.
 
-while true; do find . -name '*.md' | sed 's/.*\/\.#.*//' | sed 's/.*\/#.*//' | grep -v '^$' | entr -d ripplebuild.sh; done
+livereloadx &
+
+while true; do find . -name '*.md' | sed 's/.*\/\.#.*//' | sed 's/.*\/#.*//' | grep -v '^$' | entr -d ~/bin/ripplebuild.sh; done
