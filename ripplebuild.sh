@@ -4,4 +4,6 @@
 
 rippleclean.sh
 rippledoc.sh
-reload-browser Chrome
+
+# for mac
+# reload-browser Chrome
