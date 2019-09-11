@@ -1,7 +1,6 @@
 #!/bin/bash
 
-# gets path from which the script was run
-# symlinks will break
+# script will only run correctly from script directory
 
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
@@ -9,5 +8,6 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 mkdir -p ~/bin
 wget -cvN --directory-prefix=~/bin https://gitlab.com/uvtc/rippledoc/raw/master/rippledoc.py
+chmod +x ~/bin/rippledoc.py
 rm -f ~/bin/wripple*
-ln -s $SCRIPT_DIR/wripple* ~/bin
+ln -s ./wripple* ~/bin
