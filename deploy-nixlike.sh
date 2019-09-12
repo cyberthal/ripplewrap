@@ -10,4 +10,4 @@ mkdir -p ~/bin
 wget -cvN --directory-prefix=~/bin https://gitlab.com/uvtc/rippledoc/raw/master/rippledoc.py
 chmod +x ~/bin/rippledoc.py
 rm -f ~/bin/wripple*
-ln -s ./wripple* ~/bin
+ln -s $SCRIPT_DIR/wripple* ~/bin
